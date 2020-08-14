@@ -15,7 +15,7 @@ header {
   align-items: center;
   height: 80px;
   box-shadow: var(--box-shadow-main);
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 header img {
@@ -42,6 +42,53 @@ header img {
   padding: 0px 10px;
 }
 
+.search:focus {
+  outline-color: var(--main-color);
+}
+
 .profile {
   display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-name {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #02141b;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin: 0 10px;
+  max-width: 50px;
+  height: auto;
+}
+
+/* Estilo del Body en Grid */
+
+.body-container {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  height: 100vh;
+}
+
+.buttons {
+  background-color: var(--main-color);
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.buttons p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.buttons i {
+  font-size: 60px;
+  cursor: pointer;
 }
