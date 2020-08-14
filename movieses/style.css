@@ -92,3 +92,42 @@ header img {
   font-size: 60px;
   cursor: pointer;
 }
+
+.movie {
+  width: 200px;
+  height: 300px;
+  background-image: url(https://i.pinimg.com/474x/dc/00/a9/dc00a9b2fc3b1f84100dee60e94f1b3d.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.movie-info {
+  background-color: rgba(254, 85, 92, 70%);
+  padding: 0 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.movie-info:hover {
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgba(254, 85, 91, 80%);
+}
+
+.movies-images {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 250px));
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 300px;
+  padding: 0 30px;
+}
